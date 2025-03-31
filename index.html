@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 
 <head>
   <!-- Basic -->
@@ -35,42 +35,50 @@
   <style>
     button.owl-prev,
     button.owl-next {
-      background-color: #000; /* 设置背景颜色 */
-      color: #fff; /* 设置文字颜色 */
-      border: none; /* 移除边框 */
-      padding: 10px; /* 设置内边距 */
-      cursor: pointer; /* 设置鼠标指针样式 */
+      background-color: #000; /* 設置背景顏色 */
+      color: #fff; /* 設置文字顏色 */
+      border: none; /* 移除邊框 */
+      padding: 10px; /* 設置內邊距 */
+      cursor: pointer; /* 設置鼠標指針樣式 */
     }
 
     button.owl-prev:hover,
     button.owl-next:hover {
-      background-color: #555; /* 设置悬停时的背景颜色 */
+      background-color: #555; /* 設置懸停時的背景顏色 */
     }
 
     span {
-      background-color: #ffffff; /* 设置背景颜色为白色 */
-      color: #000000; /* 设置文字颜色为黑色 */
+      background-color: #ffffff; /* 設置背景顏色為白色 */
+      color: #000000; /* 設置文字顏色為黑色 */
     }
 
     footer.footer_section {
-      background-color: #333333; /* 设置背景颜色为深灰色 */
-      color: #ffffff; /* 设置文字颜色为白色 */
-      padding: 20px; /* 设置内边距 */
-      text-align: center; /* 设置文字居中 */
+      background-color: #ffffff; /* 設置背景顏色為白色 */
+      color: #000000; /* 設置文字顏色為黑色 */
+      padding: 20px; /* 設置內邊距 */
+      text-align: center; /* 設置文字居中 */
     }
 
     a.btn1 {
-      background-color: #000000; /* 设置背景颜色为黑色 */
-      color: #ffffff; /* 设置文字颜色为白色 */
-      padding: 10px 20px; /* 设置内边距 */
-      text-decoration: none; /* 移除下划线 */
-      display: inline-block; /* 使链接像按钮一样显示 */
-      border-radius: 5px; /* 设置圆角 */
+      background-color: #000000; /* 設置背景顏色為黑色 */
+      color: #ffffff; /* 設置文字顏色為白色 */
+      padding: 10px 20px; /* 設置內邊距 */
+      text-decoration: none; /* 移除下劃線 */
+      display: inline-block; /* 使鏈接像按鈕一樣顯示 */
+      border-radius: 5px; /* 設置圓角 */
+      position: relative; /* 設置相對定位 */
     }
 
-    a.btn1:hover {
-      background-color: #333333; /* 设置悬停时的背景颜色 */
-      color: #ffffff; /* 设置悬停时的文字颜色 */
+    a.btn1::before {
+      content: ''; /* 添加內容 */
+      position: absolute; /* 設置絕對定位 */
+      top: -10px; /* 設置頂部偏移 */
+      left: -10px; /* 設置左側偏移 */
+      right: -10px; /* 設置右側偏移 */
+      bottom: -10px; /* 設置底部偏移 */
+      background-color: #ffffff; /* 設置背景顏色為白色 */
+      z-index: -1; /* 設置層級 */
+      border-radius: 10px; /* 設置圓角 */
     }
   </style>
 </head>
@@ -166,10 +174,10 @@
               <div class="row">
                 <div class="col-md-6 ">
                   <div class="detail-box">
-                    <h1>
+                    <h2>
                       Crypto <br>
                       Currency
-                    </h1>
+                    </h2>
                     <p>
                       Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
                     </p>
@@ -193,10 +201,10 @@
               <div class="row">
                 <div class="col-md-6 ">
                   <div class="detail-box">
-                    <h1>
+                    <h3>
                       Crypto <br>
                       Currency
-                    </h1>
+                    </h3>
                     <p>
                       Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
                     </p>
