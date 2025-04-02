@@ -38,8 +38,10 @@
       background-color: #000; /* 設置背景顏色 */
       color: #fff; /* 設置文字顏色 */
       border: none; /* 移除邊框 */
-      padding: 10px; /* 設置內邊距 */
+      padding: 15px 30px; /* 設置內邊距 */
       cursor: pointer; /* 設置鼠標指針樣式 */
+      font-size: 16px; /* 增加字體大小 */
+      margin: 10px; /* 增加外邊距 */
     }
 
     button.owl-prev:hover,
@@ -53,8 +55,8 @@
     }
 
     footer.footer_section {
-      background-color: #ffffff; /* 設置背景顏色為白色 */
-      color: #000000; /* 設置文字顏色為黑色 */
+      background-color: #000000; /* 設置背景顏色為黑色 */
+      color: #ffffff; /* 設置文字顏色為白色 */
       padding: 20px; /* 設置內邊距 */
       text-align: center; /* 設置文字居中 */
     }
@@ -62,11 +64,13 @@
     a.btn1 {
       background-color: #000000; /* 設置背景顏色為黑色 */
       color: #ffffff; /* 設置文字顏色為白色 */
-      padding: 10px 20px; /* 設置內邊距 */
+      padding: 15px 30px; /* 設置內邊距 */
       text-decoration: none; /* 移除下劃線 */
       display: inline-block; /* 使鏈接像按鈕一樣顯示 */
       border-radius: 5px; /* 設置圓角 */
       position: relative; /* 設置相對定位 */
+      font-size: 16px; /* 增加字體大小 */
+      margin: 10px; /* 增加外邊距 */
     }
 
     a.btn1::before {
@@ -80,6 +84,28 @@
       z-index: -1; /* 設置層級 */
       border-radius: 10px; /* 設置圓角 */
     }
+
+    a {
+      padding: 10px 20px; /* 增加內邊距 */
+      font-size: 16px; /* 增加字體大小 */
+      margin: 10px; /* 增加外邊距 */
+      display: inline-block; /* 使鏈接像按鈕一樣顯示 */
+    }
+
+    a.footer-logo {
+      color: #000000; /* 設置文字顏色為黑色 */
+      background-color: #ffffff; /* 設置背景顏色為白色 */
+    }
+
+    p {
+      color: #000000; /* 設置文字顏色為黑色 */
+      background-color: #ffffff; /* 設置背景顏色為白色 */
+    }
+
+    footer.footer_section a {
+      color: #ffffff; /* 設置文字顏色為白色 */
+      background-color: #000000; /* 設置背景顏色為黑色 */
+    }
   </style>
 </head>
 
@@ -89,7 +115,7 @@
 
     <div class="hero_bg_box">
       <div class="bg_img_box">
-        <img src="images/hero-bg.png" alt="">
+        <img src="images/hero-bg.webp" alt="">
       </div>
     </div>
 
@@ -113,23 +139,24 @@
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About</a>
+                <a class="nav-link" href="about.html"> About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="service.html">Services</a>
+                <a class="nav-link" href="service.html"> Our Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="why.html">Why Us</a>
+                <a class="nav-link" href="why.html"> Why Choose Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
+                <a class="nav-link" href="team.html"> Our Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+                <a class="nav-link" href="login.html"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
               </li>
               <form class="form-inline">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                   <i class="fa fa-search" aria-hidden="true"></i>
+                  Search
                 </button>
               </form>
             </ul>
@@ -155,15 +182,19 @@
                       Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
-                        Read More
+                      <a href="readmore.html" class="btn1">
+                        Read More About Crypto Currency
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <div class="img-box">
+                      <picture>
+                        <source srcset="images/slider-img.png" type="image/webp">
+                        <img src="images/slider-img.jpg" alt="Crypto Currency Image" width="600" height="400">
+                      </picture>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -182,15 +213,15 @@
                       Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
-                        Read More
+                      <a href="readmore.html" class="btn1">
+                        Read More About Crypto Currency
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="images/slider-img.webp" alt="Crypto Currency Image">
                   </div>
                 </div>
               </div>
@@ -209,15 +240,15 @@
                       Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1">
-                        Read More
+                      <a href="readmore.html" class="btn1">
+                        Read More About Crypto Currency
                       </a>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="images/slider-img.png" alt="">
+                    <img src="images/slider-img.webp" alt="Crypto Currency Image">
                   </div>
                 </div>
               </div>
@@ -243,26 +274,26 @@
       <div class="row">
         <div class="col-md-4 footer-col">
           <div class="footer_contact">
-            <h4>
+            <h2>
               Reach at..
-            </h4>
+            </h2>
             <div class="contact_link_box">
-              <a href="">
+              <a href="location.html">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <span>
-                  Location
+                  Our Location
                 </span>
               </a>
-              <a href="">
+              <a href="tel:+011234567890">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
                   Call +01 1234567890
                 </span>
               </a>
-              <a href="">
+              <a href="mailto:demo@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  Email demo@gmail.com
                 </span>
               </a>
             </div>
@@ -270,27 +301,32 @@
         </div>
         <div class="col-md-4 footer-col">
           <div class="footer_detail">
-            <a href="" class="footer-logo">
+            <a href="index.html" class="footer-logo">
               Finexo
             </a>
             <p>
               Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
             </p>
             <div class="footer_social">
-              <a href="">
+              <a href="https://www.facebook.com">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
+                Facebook
               </a>
-              <a href="">
+              <a href="https://www.twitter.com">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
+                Twitter
               </a>
-              <a href="">
+              <a href="https://www.linkedin.com">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
+                LinkedIn
               </a>
-              <a href="">
+              <a href="https://www.instagram.com">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
+                Instagram
               </a>
-              <a href="">
+              <a href="https://www.pinterest.com">
                 <i class="fa fa-pinterest" aria-hidden="true"></i>
+                Pinterest
               </a>
             </div>
           </div>
